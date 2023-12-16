@@ -49,10 +49,10 @@ class BlockingServerBase:
         print(message)
         return ""
 
-if __name__ == "__maint__":
+if __name__ == "__main__":
     server = BlockingServerBase()
     ip = input("Input address")
     port = int(input("Input port number"))
     address = (ip,port)
     server.accept(address,socket.AF_INET,socket.SOCK_STREAM,0)
-    
+
